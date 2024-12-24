@@ -197,7 +197,7 @@ a:hover {
 
 /* Highlight for the whole sentence */
 .highlight {
-  background-color: #85fbff; /* Adds the blue highlight */
+  background-color: Yellow; /* Adds the blue highlight */
   padding: 0.2rem; /* Optional: Adds padding for better spacing */
   border-radius: 4px; /* Optional: Rounds the edges for a cleaner look */
   display: inline-block; /* Ensures the background applies to the whole sentence */
