@@ -19,16 +19,6 @@ header {
   padding: 1.5rem 2rem; /* Adjusted padding for balance */
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between; /* Align photo and text horizontally */
-  align-items: center;
-}
-
-.text {
-  flex: 1;
-}
-
 header h1 {
   font-family: 'Playfair Display', serif; /* Elegant font for heading */
   font-size: 2.8rem; /* Slightly smaller */
@@ -83,27 +73,31 @@ hr.blue-line {
   margin-top: 1rem;
 }
 
+/* Content Container */
+.content-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
 /* Profile Photo */
 .photo-container {
-  margin-left: 2rem;
+  flex: 0 0 30%;
 }
 
 .profile-photo {
-  width: 170%; /* 1.7x size increase */
+  width: 100%;
   max-width: 300px;
   border-radius: 8px;
 }
 
-/* Main Content */
-main {
-  max-width: 800px;
-  margin: 2rem auto; /* Reduced top and bottom margins */
-  padding: 2rem;
-  text-align: left;
+/* About Section */
+.about {
+  flex: 1;
 }
 
-/* Section Headings */
-h2 {
+.about h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem; /* Increased heading font size */
   font-weight: bold;
@@ -111,7 +105,6 @@ h2 {
   color: #222;
 }
 
-/* About Paragraph */
 .about p {
   font-size: 1.5rem; /* Increased paragraph font size */
   margin-bottom: 1.5rem;
