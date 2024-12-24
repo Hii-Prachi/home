@@ -7,117 +7,64 @@
 
 /* Body Styles */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px; /* Increase overall font size */
+  font-family: 'Source Sans Pro', sans-serif; /* Clean sans-serif for body text */
+  font-size: 18px; /* Increased font size */
   color: #333;
   background-color: #f7f7f7;
+  line-height: 1.8;
   display: flex;
-  justify-content: center; /* Center the text box horizontally */
-  align-items: center; /* Center the text box vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   min-height: 100vh; /* Full height for centering */
   padding: 2rem;
+  text-align: center; /* Center the text inside the text box */
 }
 
-/* Content Container */
+/* Main Content Box */
 main {
-  max-width: 800px; /* Constrain text box width */
-  text-align: left; /* Keep text left-aligned */
-  padding: 1rem; /* Add padding inside the text box */
+  max-width: 800px; /* Limit text box width */
+  padding: 1rem; /* Add inner spacing */
+  text-align: center; /* Align text within the box */
 }
 
 /* Header Section */
-header {
-  margin-bottom: 2rem;
-}
-
 header h1 {
-  font-family: 'Lora', serif;
-  font-size: 3rem; /* Large, bold heading */
+  font-family: 'Playfair Display', serif; /* Elegant font for heading */
+  font-size: 4rem; /* Larger font size for the main heading */
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #222;
 }
 
 header .subtitle {
-  font-size: 1.5rem; /* Larger subtitle text */
+  font-family: 'Source Sans Pro', sans-serif; /* Sans-serif for subtitle */
+  font-size: 1.8rem; /* Subtitle font size */
   color: #666;
-}
-
-/* About Section */
-.about {
   margin-bottom: 2rem;
 }
 
-.about p {
-  font-size: 1.2rem; /* Body text size */
-  line-height: 1.8; /* Increased line spacing */
-}
-
-/* Skills Section */
-.skills {
-  margin-bottom: 2rem;
-}
-
-.skills h2 {
-  font-family: 'Lora', serif;
+/* Section Headings */
+h2 {
+  font-family: 'Playfair Display', serif; /* Elegant font for section headings */
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #222;
 }
 
-.skills ul {
-  list-style-type: none;
-  padding-left: 0;
+/* Body Text */
+p {
+  font-size: 1.2rem; /* Larger paragraph text */
+  margin-bottom: 1.5rem;
 }
 
-.skills li {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.skills li strong {
-  font-weight: bold;
-}
-
-/* Projects Section */
-.projects {
-  margin-bottom: 2rem;
-}
-
-.projects h2 {
-  font-family: 'Lora', serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-.projects p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* Contact Section */
-.contact h2 {
-  font-family: 'Lora', serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-.contact p {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact a {
+/* Links */
+a {
   color: #0073e6;
   font-weight: bold;
   text-decoration: none;
 }
 
-.contact a:hover {
+a:hover {
   text-decoration: underline;
 }
