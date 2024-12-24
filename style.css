@@ -8,88 +8,92 @@
 /* Body Styles */
 body {
   font-family: 'Source Sans Pro', sans-serif; /* Clean sans-serif for body text */
-  font-size: 18px;
+  font-size: 20px; /* Overall font size increased */
   color: #333;
   background-color: #f7f7f7;
   line-height: 1.8;
-  margin: 0;
-  padding: 0;
 }
 
 /* Header Section */
 header {
-  width: 100%; /* Full width */
-  padding: 2rem;
-  text-align: left; /* Align text to the left */
+  display: flex;
+  justify-content: space-between; /* Navigation buttons on the right */
+  align-items: center;
+  padding: 1.5rem 2rem; /* Reduced margin */
+  text-align: left;
 }
 
 header h1 {
   font-family: 'Playfair Display', serif; /* Elegant font for heading */
-  font-size: 3rem; /* Large heading */
+  font-size: 3.5rem; /* Larger heading */
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #222;
 }
 
 header .subtitle {
-  font-family: 'Source Sans Pro', sans-serif; /* Sans-serif for subtitle */
-  font-size: 1.5rem; /* Smaller font size for subtitle */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem; /* Smaller font size */
   font-style: italic;
   color: #666;
   margin-bottom: 1rem;
 }
 
-/* Navigation Links */
+/* Navigation Buttons */
 .navigation {
   display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .nav-link {
-  margin-right: 1.5rem; /* Spacing between links */
   font-size: 1.2rem;
-  font-weight: bold;
   color: #0073e6;
   text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  border-color: #0073e6;
+  background-color: #f0f8ff;
 }
 
-.nav-link.linkedin img {
-  width: 24px;
-  height: 24px;
+.nav-link.linkedin {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: #0073e6;
 }
 
-/* Line Below Navigation */
+/* Horizontal Line Below Header */
 hr {
-  border: none;
-  border-top: 2px solid #ddd;
+  border: 0;
+  border-top: 2px solid #ccc;
   margin: 1rem 0;
 }
 
 /* Main Content */
 main {
-  max-width: 800px; /* Limit the width of the content */
-  margin: auto; /* Center horizontally */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem;
-  text-align: left; /* Keep text left-aligned */
+  text-align: left;
 }
 
 /* Section Headings */
 h2 {
-  font-family: 'Playfair Display', serif; /* Elegant font for section headings */
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #222;
 }
 
-/* Paragraphs */
+/* Body Text */
 p {
-  font-size: 1.2rem; /* Larger paragraph text */
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
