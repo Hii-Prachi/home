@@ -139,6 +139,16 @@ h2 {
   line-height: 1.7; /* Improves readability */
 }
 
+.skills li:hover {
+  transform: scale(1.05); /* Slightly enlarges the item on hover */
+  color: #005bb5; /* Darker shade of blue for hover */
+  transition: all 0.3s ease-in-out;
+}
+
+.skills li::before:hover {
+  transform: rotate(20deg); /* Adds a playful rotation to the bullet */
+  transition: transform 0.3s ease-in-out;
+}
 
 /* Links */
 a {
