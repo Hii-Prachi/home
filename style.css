@@ -16,17 +16,11 @@ body {
 
 /* Header Section */
 header {
-  padding: 1.5rem 2rem; /* Adjusted padding for balance */
-}
-
-.header-content {
   display: flex;
-  align-items: center; /* Align text and photo horizontally */
-  justify-content: space-between;
-}
-
-.header-text {
-  max-width: 60%; /* Ensure text occupies a balanced width */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.5rem 2rem; /* Adjusted padding for balance */
 }
 
 header h1 {
@@ -49,7 +43,7 @@ header .subtitle {
 .navigation {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  align-self: flex-end; /* Align navigation to the right */
 }
 
 .nav-link {
@@ -74,19 +68,25 @@ header .subtitle {
   color: #0073e6;
 }
 
-/* Header Photo */
-.header-photo img {
-  width: 170%; /* 1.7x bigger than the original size */
-  height: auto;
-  border-radius: 50%; /* Optional: Make the photo circular */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Horizontal Line Below Header */
 hr.blue-line {
   border: 0;
   border-top: 3px solid #0073e6; /* Blue line */
+  width: 100%;
   margin-top: 1rem;
+}
+
+/* Profile Photo */
+.photo-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-photo {
+  width: 170%; /* 1.7x size increase */
+  max-width: 300px;
+  border-radius: 8px;
 }
 
 /* Main Content */
@@ -97,16 +97,18 @@ main {
   text-align: left;
 }
 
-.about h2, .skills h2, .contact h2 {
+/* Section Headings */
+h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 3rem; /* Increased heading font size */
   font-weight: bold;
   margin-bottom: 1rem;
   color: #222;
 }
 
-.about p, .skills p, .contact p {
-  font-size: 1.4rem; /* Increased paragraph font size */
+/* About Paragraph */
+.about p {
+  font-size: 1.5rem; /* Increased paragraph font size */
   margin-bottom: 1.5rem;
 }
 
