@@ -32,7 +32,7 @@ header {
 
 .header-left h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem; /* Updated size */
+  font-size: 2rem;
   font-weight: bold;
   color: #222;
 }
@@ -48,11 +48,11 @@ header {
 .navigation {
   display: flex;
   gap: 1rem;
-  font-size: 1.3rem; /* Updated size */
+  font-size: 1.3rem;
 }
 
 .nav-link {
-  font-size: 1.3rem; /* Updated size */
+  font-size: 1.3rem;
   color: #0073e6;
   text-decoration: none;
   font-weight: 600;
