@@ -8,7 +8,7 @@
 /* Body Styles */
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: 18px; /* Adjusted for better readability */
   color: #333;
   background-color: #f7f7f7;
   line-height: 1.8;
@@ -32,14 +32,14 @@ header {
 
 .header-left h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem; /* Adjusted size for balance */
+  font-size: 2rem; /* Reduced slightly */
   font-weight: bold;
   color: #222;
 }
 
 .header-left .subtitle {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.8rem; /* Reduced size */
   font-style: italic;
   color: #666;
   margin-top: 0.3rem;
@@ -48,11 +48,11 @@ header {
 .navigation {
   display: flex;
   gap: 1rem;
-  font-size: 1rem; /* Adjusted size for alignment */
+  font-size: 1.3rem; /* Increased for better balance */
 }
 
 .nav-link {
-  font-size: 1rem; /* Adjusted size for balance */
+  font-size: 1.3rem; /* Adjusted size */
   color: #0073e6;
   text-decoration: none;
   font-weight: 600;
@@ -92,7 +92,7 @@ main {
 /* Section Headings */
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Adjusted for better proportions */
   font-weight: bold;
   margin-bottom: 1rem;
   color: #222;
@@ -100,8 +100,19 @@ h2 {
 
 /* Body Text */
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Slightly smaller for better alignment */
   margin-bottom: 1.5rem;
+  line-height: 1.7; /* Adjusted for readability */
+}
+
+/* Image Styling for About Section */
+.about img {
+  width: 150px; /* Adjusted image size */
+  height: auto;
+  border: 3px solid #f7f7f7; /* Decorative border */
+  border-radius: 8px; /* Optional rounded edges */
+  margin-right: 20px; /* Spacing from text */
+  float: left; /* Align image to the left */
 }
 
 /* Links */
