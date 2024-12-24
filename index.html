@@ -43,6 +43,52 @@
 
            <!-- Dynamic Text Effect -->
           <p>I am interested in <span class="dynamic-text"></span></p>
+
+          <!-- Inline JavaScript -->
+      <script>
+        const words = [
+          "Learning Experience Design",
+          "Program Management",
+          "Experiential Education",
+          "Critical Pedagogy",
+          "Entrepreneurship",
+          "Facilitation",
+        ];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 150; // Speed of typing
+        const erasingSpeed = 100; // Speed of erasing
+        const delayBetweenWords = 2000; // Delay before moving to the next word
+        const dynamicText = document.getElementById("dynamic-text");
+
+        function typeEffect() {
+          if (charIndex < words[wordIndex].length && !isDeleting) {
+            // Typing forward
+            dynamicText.textContent += words[wordIndex][charIndex];
+            charIndex++;
+            setTimeout(typeEffect, typingSpeed);
+          } else if (isDeleting && charIndex > 0) {
+            // Backspacing
+            dynamicText.textContent = words[wordIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(typeEffect, erasingSpeed);
+          } else {
+            // Move to the next word
+            isDeleting = !isDeleting;
+            if (!isDeleting) {
+              wordIndex = (wordIndex + 1) % words.length; // Loop back to the first word
+              setTimeout(typeEffect, delayBetweenWords);
+            } else {
+              setTimeout(typeEffect, 500); // Pause before deleting
+            }
+          }
+        }
+
+        // Start the effect
+        document.addEventListener("DOMContentLoaded", () => typeEffect());
+      </script>
         </div>
       </div>
     </section>
