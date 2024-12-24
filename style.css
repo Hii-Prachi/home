@@ -8,55 +8,58 @@
 /* Body Styles */
 body {
   font-family: 'Garamond', serif;
-  font-size: 18px;
+  font-size: 20px; /* Increased overall font size */
   color: #333;
   background-color: #f7f7f7;
   line-height: 1.8;
-  margin: 2rem;
-  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 100vh; /* Ensure the page takes the full height */
+  padding: 2rem; /* Add spacing around the content */
+}
+
+/* Layout Container */
+main, header {
+  max-width: 800px; /* Set a fixed width for the text box */
+  text-align: left; /* Left-align the text inside the box */
 }
 
 /* Header Section */
 header {
-  margin-bottom: 3rem;
-  text-align: left;
-  max-width: 900px;
+  margin-bottom: 2rem;
 }
 
 header h1 {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem; /* Large, bold heading */
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #222;
 }
 
 header .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem; /* Slightly larger subtitle */
   color: #666;
 }
 
-/* Main Content */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
+/* About Section */
 .about {
   margin-bottom: 2rem;
 }
 
 .about p {
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* Larger paragraph text */
 }
 
+/* Skills Section */
 .skills {
   margin-bottom: 2rem;
 }
 
 .skills h2 {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #222;
@@ -69,7 +72,7 @@ main {
 
 .skills li {
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .skills li strong {
@@ -83,32 +86,28 @@ main {
 
 .projects h2 {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #222;
 }
 
 .projects p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #555;
 }
 
 /* Contact Section */
-.contact {
-  margin-bottom: 2rem;
-}
-
 .contact h2 {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #222;
 }
 
 .contact p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
