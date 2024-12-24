@@ -8,29 +8,24 @@
 /* Body Styles */
 body {
   font-family: 'Source Sans Pro', sans-serif; /* Clean sans-serif for body text */
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
   color: #333;
   background-color: #f7f7f7;
   line-height: 1.8;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  min-height: 100vh; /* Full height for centering */
-  padding: 2rem;
-  text-align: center; /* Center the text inside the text box */
-}
-
-/* Main Content Box */
-main {
-  max-width: 800px; /* Limit text box width */
-  padding: 1rem; /* Add inner spacing */
-  text-align: center; /* Align text within the box */
+  margin: 0;
 }
 
 /* Header Section */
+header {
+  position: absolute; /* Fix the header to the top-left */
+  top: 2rem;
+  left: 2rem;
+  text-align: left;
+}
+
 header h1 {
   font-family: 'Playfair Display', serif; /* Elegant font for heading */
-  font-size: 4rem; /* Larger font size for the main heading */
+  font-size: 3rem; /* Large heading */
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #222;
@@ -38,9 +33,17 @@ header h1 {
 
 header .subtitle {
   font-family: 'Source Sans Pro', sans-serif; /* Sans-serif for subtitle */
-  font-size: 1.8rem; /* Subtitle font size */
+  font-size: 1.5rem;
   color: #666;
-  margin-bottom: 2rem;
+}
+
+/* Main Content Box */
+main {
+  max-width: 800px; /* Limit text box width */
+  margin: auto; /* Center the text box horizontally */
+  margin-top: 20vh; /* Add top margin to position the content properly */
+  padding-left: 2rem; /* Add left padding for alignment */
+  text-align: left; /* Keep text left-aligned */
 }
 
 /* Section Headings */
