@@ -13,14 +13,20 @@ body {
   background-color: #f7f7f7;
   line-height: 1.8;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack header and main vertically */
+  align-items: center; /* Center the text box horizontally */
 }
 
 /* Header Section */
 header {
-  position: absolute; /* Fix the header to the top-left */
-  top: 2rem;
-  left: 2rem;
-  text-align: left;
+  width: 100%; /* Take the full width of the page */
+  padding: 2rem;
+  text-align: left; /* Align the text inside to the left */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 header h1 {
@@ -33,41 +39,23 @@ header h1 {
 
 header .subtitle {
   font-family: 'Source Sans Pro', sans-serif; /* Sans-serif for subtitle */
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Subtitle size */
   color: #666;
 }
 
 /* Main Content Box */
 main {
-  max-width: 800px; /* Limit text box width */
-  margin: auto; /* Center the text box horizontally */
-  margin-top: 20vh; /* Add top margin to position the content properly */
-  padding-left: 2rem; /* Add left padding for alignment */
-  text-align: left; /* Keep text left-aligned */
+  max-width: 800px; /* Limit the width of the text box */
+  margin-top: 8rem; /* Create space between header and main content */
+  padding: 2rem; /* Add padding inside the text box */
+  text-align: left; /* Ensure all text is left-aligned */
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+  border-radius: 10px; /* Rounded corners for the text box */
 }
-
+ 
 /* Section Headings */
 h2 {
   font-family: 'Playfair Display', serif; /* Elegant font for section headings */
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-/* Body Text */
-p {
-  font-size: 1.2rem; /* Larger paragraph text */
-  margin-bottom: 1.5rem;
-}
-
-/* Links */
-a {
-  color: #0073e6;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
