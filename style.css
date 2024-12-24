@@ -7,13 +7,13 @@
 
 /* Body Styles */
 body {
-  font-family: 'Caveat', cursive;
-  font-size: 16px;
+  font-family: 'Alice', serif;
+  font-size: 18px;
   color: #333;
   background-color: #f7f7f7;
-  text-align: center;
   line-height: 1.8;
   padding: 2rem;
+  text-align: left;
 }
 
 /* Header Section */
@@ -22,25 +22,22 @@ header {
 }
 
 header h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #222;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Textured Effect */
 }
 
 header .subtitle {
   font-size: 1.2rem;
   color: #666;
-  font-weight: bold;
 }
 
 /* About Section */
 .about {
   margin-bottom: 2rem;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Skills Section */
@@ -49,22 +46,25 @@ header .subtitle {
 }
 
 .skills h2 {
-  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #222;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 .skills ul {
   list-style-type: none;
-  text-align: left;
-  margin: 0 auto;
-  max-width: 600px;
+  padding-left: 0;
 }
 
 .skills li {
   margin-bottom: 1rem;
   font-size: 1rem;
+}
+
+.skills li strong {
+  font-weight: bold;
 }
 
 /* Projects Section */
@@ -73,27 +73,29 @@ header .subtitle {
 }
 
 .projects h2 {
-  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #222;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 .projects p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555;
 }
 
 /* Contact Section */
 .contact h2 {
-  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #222;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 .contact p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
