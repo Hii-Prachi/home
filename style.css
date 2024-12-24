@@ -7,22 +7,22 @@
 
 /* Body Styles */
 body {
-  font-family: 'Garamond', serif;
-  font-size: 20px; /* Increased overall font size */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px; /* Increase overall font size */
   color: #333;
   background-color: #f7f7f7;
-  line-height: 1.8;
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  min-height: 100vh; /* Ensure the page takes the full height */
-  padding: 2rem; /* Add spacing around the content */
+  justify-content: center; /* Center the text box horizontally */
+  align-items: center; /* Center the text box vertically */
+  min-height: 100vh; /* Full height for centering */
+  padding: 2rem;
 }
 
-/* Layout Container */
-main, header {
-  max-width: 800px; /* Set a fixed width for the text box */
-  text-align: left; /* Left-align the text inside the box */
+/* Content Container */
+main {
+  max-width: 800px; /* Constrain text box width */
+  text-align: left; /* Keep text left-aligned */
+  padding: 1rem; /* Add padding inside the text box */
 }
 
 /* Header Section */
@@ -31,15 +31,15 @@ header {
 }
 
 header h1 {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 3.5rem; /* Large, bold heading */
+  font-family: 'Lora', serif;
+  font-size: 3rem; /* Large, bold heading */
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #222;
 }
 
 header .subtitle {
-  font-size: 1.8rem; /* Slightly larger subtitle */
+  font-size: 1.5rem; /* Larger subtitle text */
   color: #666;
 }
 
@@ -49,7 +49,8 @@ header .subtitle {
 }
 
 .about p {
-  font-size: 1.4rem; /* Larger paragraph text */
+  font-size: 1.2rem; /* Body text size */
+  line-height: 1.8; /* Increased line spacing */
 }
 
 /* Skills Section */
@@ -58,7 +59,7 @@ header .subtitle {
 }
 
 .skills h2 {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -85,7 +86,7 @@ header .subtitle {
 }
 
 .projects h2 {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -99,7 +100,7 @@ header .subtitle {
 
 /* Contact Section */
 .contact h2 {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
