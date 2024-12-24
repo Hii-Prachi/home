@@ -16,32 +16,28 @@ body {
 
 /* Header Section */
 header {
-  display: flex;
-  flex-direction: column;
   padding: 1.5rem 2rem;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-header h1 {
+.header-left h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
-  margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-header .subtitle {
+.header-left .subtitle {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.2rem;
   font-style: italic;
   color: #666;
-  margin-right: auto;
 }
 
 .navigation {
