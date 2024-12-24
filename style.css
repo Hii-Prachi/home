@@ -125,6 +125,40 @@ h2 {
   color: #222;
 }
 
+/* Dynamic Text Effect */
+.dynamic-text {
+  display: inline-block;
+  position: relative;
+  color: #0073e6; /* Matches the theme color */
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  width: 300px; /* Adjust width as needed */
+  animation: text-change 12s linear infinite;
+}
+
+@keyframes text-change {
+  0%, 16.6% {
+    content: "Learning Experience Design";
+  }
+  16.7%, 33.3% {
+    content: "Program Management";
+  }
+  33.4%, 50% {
+    content: "Experiential Education";
+  }
+  50.1%, 66.6% {
+    content: "Critical Pedagogy";
+  }
+  66.7%, 83.3% {
+    content: "Entrepreneurship";
+  }
+  83.4%, 100% {
+    content: "Facilitation";
+  }
+}
+
 /* Skills Section (What I Bring) */
 .skills ul {
   list-style-type: disc; /* Restores bullet points */
