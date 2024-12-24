@@ -194,3 +194,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Highlight for the whole sentence */
+.highlight {
+  background-color: yellow; /* Adds the yellow highlight */
+  padding: 0.2rem; /* Optional: Adds padding for better spacing */
+  border-radius: 4px; /* Optional: Rounds the edges for a cleaner look */
+  display: inline-block; /* Ensures the background applies to the whole sentence */
+}
