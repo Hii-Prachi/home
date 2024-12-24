@@ -125,17 +125,20 @@ h2 {
   color: #222;
 }
 
-/* Skills Section */
+/* Skills Section (What I Bring) */
 .skills ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: disc; /* Restores bullet points */
+  padding-left: 1.5rem; /* Adds spacing to align bullets with text */
+  margin-bottom: 1.5rem; /* Adds spacing below the list */
 }
 
 .skills li {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.2rem; /* Matches body text */
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem; /* Adds spacing between list items */
+  line-height: 1.7; /* Improves readability */
 }
+
 
 /* Links */
 a {
