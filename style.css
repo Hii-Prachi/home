@@ -7,8 +7,8 @@
 
 /* Body Styles */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif; /* Clean sans-serif for body text */
+  font-size: 20px; /* Overall font size increased */
   color: #333;
   background-color: #f7f7f7;
   line-height: 1.8;
@@ -16,43 +16,44 @@ body {
 
 /* Header Section */
 header {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem; /* Adjusted padding for balance */
 }
 
-.header-container {
+.header-content {
   display: flex;
+  align-items: center; /* Align text and photo horizontally */
   justify-content: space-between;
-  align-items: center;
 }
 
-.header-left {
-  display: flex;
-  flex-direction: column;
+.header-text {
+  max-width: 60%; /* Ensure text occupies a balanced width */
 }
 
-.header-left h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+header h1 {
+  font-family: 'Playfair Display', serif; /* Elegant font for heading */
+  font-size: 2.8rem; /* Slightly smaller */
   font-weight: bold;
+  margin-bottom: 0.5rem;
   color: #222;
 }
 
-.header-left .subtitle {
+header .subtitle {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.1rem; /* Updated size */
+  font-size: 1.2rem; /* Smaller font size for subtitle */
   font-style: italic;
   color: #666;
-  margin-top: 0.3rem;
+  margin-bottom: 1rem;
 }
 
+/* Navigation Buttons */
 .navigation {
   display: flex;
   gap: 1rem;
-  font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
 .nav-link {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #0073e6;
   text-decoration: none;
   font-weight: 600;
@@ -73,24 +74,30 @@ header {
   color: #0073e6;
 }
 
+/* Header Photo */
+.header-photo img {
+  width: 170%; /* 1.7x bigger than the original size */
+  height: auto;
+  border-radius: 50%; /* Optional: Make the photo circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Horizontal Line Below Header */
 hr.blue-line {
   border: 0;
-  border-top: 3px solid #0073e6;
-  width: 100%;
+  border-top: 3px solid #0073e6; /* Blue line */
   margin-top: 1rem;
 }
 
 /* Main Content */
 main {
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 2rem auto; /* Reduced top and bottom margins */
   padding: 2rem;
   text-align: left;
 }
 
-/* Section Headings */
-h2 {
+.about h2, .skills h2, .contact h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: bold;
@@ -98,9 +105,8 @@ h2 {
   color: #222;
 }
 
-/* Body Text */
-p {
-  font-size: 1.2rem;
+.about p, .skills p, .contact p {
+  font-size: 1.4rem; /* Increased paragraph font size */
   margin-bottom: 1.5rem;
 }
 
