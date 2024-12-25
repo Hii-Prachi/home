@@ -203,15 +203,21 @@ a:hover {
   display: inline-block; /* Ensures the background applies to the whole sentence */
 }
 
-/* Ensure entire page background is white */
+/* Set the entire page background to white */
 html, body {
-  background-color: #ffffff; /* Pure white */
-  margin: 0; /* Remove default margin */
+  background-color: #ffffff !important; /* Force white background */
+  margin: 0; /* Remove default margins */
   padding: 0; /* Remove default padding */
-  height: 100%; /* Ensure it applies to the full page height */
+  height: 100%; /* Cover the full viewport height */
+  width: 100%; /* Cover the full viewport width */
 }
 
-/* Ensure all sections inherit the white background */
-main, header, footer, section {
-  background-color: transparent; /* Remove any inherited background */
+/* Reset all sections and containers to ensure no inherited backgrounds */
+* {
+  background-color: transparent !important; /* Remove any background color from elements */
+}
+
+/* Specific styling for sections to inherit white background */
+header, main, footer, section, div {
+  background-color: #ffffff !important; /* Ensure all major containers are white */
 }
