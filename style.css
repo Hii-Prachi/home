@@ -202,3 +202,59 @@ a:hover {
   border-radius: 4px; /* Optional: Rounds the edges for a cleaner look */
   display: inline-block; /* Ensures the background applies to the whole sentence */
 }
+
+/* Spotlight Page */
+.spotlight {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: left; /* Align text to the left */
+}
+
+.spotlight-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; /* Bigger than other headers */
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 2rem;
+  text-align: left; /* Align to the left */
+}
+
+.spotlight-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 2rem; /* Space between grid items */
+}
+
+.spotlight-item {
+  text-align: left; /* Align text and images to the left */
+}
+
+.spotlight-item img {
+  width: 100%;
+  max-width: 300px; /* Maximum width for images */
+  border-radius: 8px; /* Rounded corners for images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.spotlight-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.spotlight-item p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem; /* Match the font size of body text */
+  margin-top: 0.5rem; /* Space between image and text */
+}
+
+.spotlight-item p a {
+  color: #0073e6; /* Blue links */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Slightly bold links */
+}
+
+.spotlight-item p a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
