@@ -202,22 +202,3 @@ a:hover {
   border-radius: 4px; /* Optional: Rounds the edges for a cleaner look */
   display: inline-block; /* Ensures the background applies to the whole sentence */
 }
-
-/* Set the entire page background to white */
-html, body {
-  background-color: #ffffff !important; /* Force white background */
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
-  height: 100%; /* Cover the full viewport height */
-  width: 100%; /* Cover the full viewport width */
-}
-
-/* Reset all sections and containers to ensure no inherited backgrounds */
-* {
-  background-color: transparent !important; /* Remove any background color from elements */
-}
-
-/* Specific styling for sections to inherit white background */
-header, main, footer, section, div {
-  background-color: #ffffff !important; /* Ensure all major containers are white */
-}
